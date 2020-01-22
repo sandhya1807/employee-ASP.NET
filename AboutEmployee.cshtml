@@ -1,0 +1,32 @@
+﻿@model employee.model.EmployProjectViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AboutEmployee</title>
+</head>
+<body>
+    <h1>about all employees</h1>
+    <table border="1">
+        <tr>
+            <td>ID</td>
+            <td>NAME</td>
+            <td>EMail</td>
+            <td>dept</td>
+            <td>projectname</td>
+        </tr>
+        <tr>
+            <td>@Model.employ.Id</td>
+            <td>@Model.employ.Name</td>
+            <td>@Model.employ.Email</td>
+            <td>@Model.employ.dept</td>
+            <td>@Model.projectname</td>
+        </tr>
+    </table>
+</body>
+</html>

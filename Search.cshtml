@@ -1,0 +1,60 @@
+﻿@model employee.model.Employ    
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Search</title>
+</head>
+<body>
+    
+    @{var emp1=ViewData["employ"]as employee.model.Employ;
+    
+    }
+    <h1> Employ</h1>
+    <table border="1">
+<tr>
+    <td>ID</td>
+    <td>NAME</td>
+    <td>EMail</td>
+    <td>dept</td>
+</tr>
+        <tr>
+            <td>@Model.Id</td>
+            <td>@Model.Name</td>
+            <td>@Model.Email</td>
+            <td>@Model.dept</td>
+        </tr>
+        @*<tr>
+            <td>@emp1.Id</td>
+            <td>@emp1.Name</td>
+            <td>@emp1.Email</td>
+            <td>@emp1.dept</td>
+            </t*@r>
+        <tr>
+           <td>
+            @ViewBag.Employ.ID
+           </td>
+           <td>
+            @ViewBag.Employ.NAME
+           </td>
+            <td>
+            @ViewBag.Employ.Email
+            </td>
+            <td>
+            @ViewBag.Employ.dept
+            </td>
+        </tr>
+        <tr>
+            <td>@ViewBag.Id</td>
+            <td>@ViewBag.nmae</td>
+            <td>@ViewBag.Email</td>
+            <td>@ViewBag.dept</td>
+        </tr>
+    </table>
+</body>
+</html>
